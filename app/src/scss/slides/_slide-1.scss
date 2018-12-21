@@ -1,0 +1,113 @@
+.slide-1 {
+    background: url("../../images/01-home/bg.jpg") no-repeat;
+    background-size: cover;
+    .item-title {
+        width: 19rem;
+        position: absolute;
+        top: 10%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        text-align: center;
+        .title-top {
+            font-size: 0.85rem;
+            background: url("../../images/01-home/title_line.png") no-repeat center;
+            background-size:  80%;
+        }
+        .title-content {
+            width: 19rem;
+            height: 4rem;
+            background: url("../../images/01-home/title.png") no-repeat center;
+            background-size: 100%;
+        }
+        .title-bottom {
+            display: inline-block;
+            padding: 0.25rem 1rem;
+            font-weight: normal;
+            color: #fff;
+            background-color: $primary;
+        }
+        .title-tips {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.5rem 2rem;
+            background: url("../../images/01-home/center_line.png") no-repeat center;
+            background-size: 95%;
+            li {
+                float: left;
+                padding-right: 2rem;
+            }
+            li:first-child {
+                margin-left: 2rem;
+            }
+        }
+    }
+    .item-model {
+        position: absolute;
+        height: 16rem;
+        width: 18rem;
+        margin: 0 auto 0 -9rem;
+        top: 40%;
+        left: 50%;
+        text-align: center;
+        .model-house {
+            position: absolute;
+            top: -5rem;
+            right: -1rem;
+            bottom: 0;
+            left: 0;
+            z-index: 3;
+            background: url("../../images/01-home/3D.png") no-repeat center;
+            background-size: 100%;
+            pointer-events: none;
+        }
+        .model-pencil {
+            position: absolute;
+            width: 18rem;
+            height: 16rem;
+            bottom: -3.5rem;
+            left: -1rem;
+            z-index: 1;
+            background: url("../../images/01-home/pencil.png") no-repeat left bottom;
+            background-size: 80%;
+        }
+        .model-entry {
+            position: absolute;
+            right: 2rem;
+            bottom: 2.7rem;
+            z-index: 2;
+            width: 7rem;
+            height: 7rem;
+            background: url("../../images/01-home/entry.png") no-repeat center;
+            background-size: 95% 100%;
+            &.entry-scale {
+                animation: entry_scaling 2s infinite linear 1s;
+            }
+        }
+        .model-bg {
+            position: absolute;
+            top: 1rem;
+            right: 0.5rem;
+            bottom: 0;
+            left: 0;
+            z-index: 0;
+            background: url("../../images/01-home/model_bg.png") no-repeat center;
+            background-size: 100%;
+            transform: rotateZ(-8deg);
+        }
+    }
+}
+
+@keyframes entry_scaling {
+    0% {
+        transform: scale(1.05);
+    }
+
+    30% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1.05);
+    }
+}

@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+.back-btn {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  width: 2rem;
+  height: 2rem;
+  background: url("../../images/04-details/back_btn.png") no-repeat;
+  background-size: contain;
+
+  &:active {
+      transform: translate3d(0, 2px, 0);
+  }
+}

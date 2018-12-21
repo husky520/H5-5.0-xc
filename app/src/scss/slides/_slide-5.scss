@@ -1,0 +1,14 @@
+.slide-5 {
+  background: url("../../images/05-cooperation/bg.jpg") no-repeat;
+  background-size: cover;
+  
+  .item-partner {
+    position: absolute;
+    top: 20%;
+    right: 2rem;
+    bottom: 20%;
+    left: 2rem;
+    background: url("../../images/05-cooperation/logos.png") no-repeat center;
+    background-size: contain;
+  }
+}
