@@ -1,6 +1,7 @@
 (function () {
     'use strict';
     
+    require('./jweixin-1.4.0.js');
     const setWx = require('./wx.js');
     setWx();
 
