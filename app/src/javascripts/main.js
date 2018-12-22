@@ -1,5 +1,8 @@
 (function () {
     'use strict';
+    
+    const setWx = require('./wx.js');
+    setWx();
 
     // load dependencies
     var animationControl = require('./animation-control.js');
@@ -8,6 +11,7 @@
 
     $(document).ready(function () {
         var video = $('#_video')[0];
+        var audio = $('#_audio')[0];
         var bgMusic = $('audio').get(0);
         var $btnMusic = $('.btn-music');
         var $upArrow = $('.up-arrow');
@@ -109,6 +113,18 @@
         // hide loading animation since everything is ready
         setTimeout(function() {
             $('.loading-overlay').slideUp();
+            // 自动播放音乐
+            if (window.WeixinJSBridge) {
+                WeixinJSBridge.invoke('getNetworkType', {}, function (e) {
+                    audio.play();
+                }, false);
+            } else {
+                document.addEventListener("WeixinJSBridgeReady", function () {
+                    WeixinJSBridge.invoke('getNetworkType', {}, function (e) {
+                        audio.play();
+                    });
+                }, false);
+            }
         }, 500);
 
         // 进入场景
@@ -152,7 +168,7 @@
                         $(v).removeClass('active');
                     }
                 });
-                video.src = `https://resources.wecareroom.com/assets/audio/0${index + 1}.mp4`;
+                video.src = 'https://resources.wecareroom.com/assets/audio/0' + index + 1 + 'mp4';
                 autoPlay();
 
                 // 更换文字

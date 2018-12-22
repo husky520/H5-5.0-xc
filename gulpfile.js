@@ -61,7 +61,7 @@ gulp.task('publish-media', function () {
 
 // compile sass, concat stylesheets in the right order,
 // and save as app/dist/stylesheets/bundle.css
-gulp.task('publish-css', function () {
+gulp.task('publish-css', function() {
     var cssVendors = vendors.stylesheets;
 
     return streamSeries(
