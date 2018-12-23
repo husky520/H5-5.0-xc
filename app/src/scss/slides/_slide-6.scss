@@ -4,12 +4,16 @@
 
   .item-qcode {
     position: absolute;
-    top: 22%;
+    top: 24%;
     left: 0;
     right: 0;
     bottom: 57%;
-    background: url("../../images/06-concat/qcode.png") no-repeat center;
-    background-size: contain;
+    text-align: center;
+
+    img {
+      width: 8rem;
+      height: 8rem;
+    }
   }
 
   .item-text {
@@ -23,17 +27,17 @@
 
   .item-bottom {
     position: absolute;
-    top: 55%;
+    top: 51%;
     left: 0;
     right: 0;
     .bottom-item {
         position: relative;
         left: 50%;
-        width: 14rem;
+        width: 15rem;
         height: 3rem;
-        margin-left: -7rem;
-        padding: 0.1rem 1.5rem;
-        font-size: 0.7rem;
+        margin-left: -7.5rem;
+        padding: 0.1rem 1.2rem;
+        font-size: 0.6rem;
         color: #fff;
         line-height: 2.7rem;
         background: url("../../images/06-concat/info_bg.png") no-repeat center;

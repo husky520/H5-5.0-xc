@@ -33,12 +33,13 @@
             padding: 0.5rem 2rem;
             background: url("../../images/01-home/center_line.png") no-repeat center;
             background-size: 95%;
+            list-style: none;
             li {
                 float: left;
-                padding-right: 2rem;
+                padding-right: 1rem;
             }
             li:first-child {
-                margin-left: 2rem;
+                margin-left: 1rem;
             }
         }
     }

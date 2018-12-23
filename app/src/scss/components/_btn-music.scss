@@ -8,21 +8,11 @@
     top: 1rem;
     right: 1rem;
     z-index: 999;
-    border: 0.125rem solid #fff;
-    border-radius: 50%;
+    border: none;
     padding: 0;
     animation: btnMusicAni 3s infinite linear;
-    i {
-        width: 2rem;
-        height: 2rem;
-        text-align: center;
-        line-height: 2rem;
-        color: #fff;
-        font-size: 1rem;
-        position: absolute;
-        top: -0.125rem;
-        left: -0.125rem;
-    }
+    background: url('../../images/music_btn.png') no-repeat;
+    background-size: contain;
     &.paused {
         opacity: 0.4;
         animation: none;

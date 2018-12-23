@@ -1,7 +1,6 @@
 (function () {
     'use strict';
     
-    require('./jweixin-1.4.0.js');
     const setWx = require('./wx.js');
     setWx();
 
@@ -169,7 +168,7 @@
                         $(v).removeClass('active');
                     }
                 });
-                video.src = 'https://resources.wecareroom.com/assets/audio/0' + index + 1 + 'mp4';
+                video.src = 'https://resources.wecareroom.com/assets/audio/0' + (index + 1) + '.mp4';
                 autoPlay();
 
                 // 更换文字

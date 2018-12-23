@@ -2,7 +2,7 @@ var $ = require('jquery');
 
 // 微信分享配置
 function setWx() {
-  var apiUrl = 'https://vr.wecareroom.com/api/wxweb/getFuwuTicket';
+  var apiUrl = 'https://vr5.wecareroom.com/api/wxweb/getFuwuTicket';
   $.ajax({
     type: 'GET',
     url: apiUrl,
@@ -26,7 +26,7 @@ function setWx() {
       var title = '5.0上新 | 自由绘制户型，一键换取家具，全屋硬装神器升级版get一下！';
       var shareLink = document.location.href;
       var desc = '19年成大单的秘密都在这！';
-      var imgUrl = 'https://resources.wecareroom.com/immersive/vrscene/thumbnail/01.jpg';
+      var imgUrl = 'https://resources.wecareroom.com/assets/img/2018-12-22.jpg';
 
       wx.ready(function() {
         // 朋友圈
