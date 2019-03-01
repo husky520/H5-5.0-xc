@@ -1,5 +1,5 @@
 .slide-1 {
-    background: url("../../images/01-home/bg.jpg") no-repeat;
+    background: url("#{$imgUrl}/01-home/bg.jpg") no-repeat;
     background-size: cover;
     .item-title {
         width: 19rem;
@@ -11,13 +11,13 @@
         text-align: center;
         .title-top {
             font-size: 0.85rem;
-            background: url("../../images/01-home/title_line.png") no-repeat center;
+            background: url("#{$imgUrl}/01-home/title_line.png") no-repeat center;
             background-size:  80%;
         }
         .title-content {
             width: 19rem;
             height: 4rem;
-            background: url("../../images/01-home/title.png") no-repeat center;
+            background: url("#{$imgUrl}/01-home/title.png") no-repeat center;
             background-size: 100%;
         }
         .title-bottom {
@@ -31,7 +31,7 @@
             display: inline-block;
             margin-top: 1rem;
             padding: 0.5rem 2rem;
-            background: url("../../images/01-home/center_line.png") no-repeat center;
+            background: url("#{$imgUrl}/01-home/center_line.png") no-repeat center;
             background-size: 95%;
             list-style: none;
             li {
@@ -58,7 +58,7 @@
             bottom: 0;
             left: 0;
             z-index: 3;
-            background: url("../../images/01-home/3D.png") no-repeat center;
+            background: url("#{$imgUrl}/01-home/3D.png") no-repeat center;
             background-size: 100%;
             pointer-events: none;
         }
@@ -69,7 +69,7 @@
             bottom: -3.5rem;
             left: -1rem;
             z-index: 1;
-            background: url("../../images/01-home/pencil.png") no-repeat left bottom;
+            background: url("#{$imgUrl}/01-home/pencil.png") no-repeat left bottom;
             background-size: 80%;
         }
         .model-entry {
@@ -79,7 +79,7 @@
             z-index: 2;
             width: 7rem;
             height: 7rem;
-            background: url("../../images/01-home/entry.png") no-repeat center;
+            background: url("#{$imgUrl}/01-home/entry.png") no-repeat center;
             background-size: 95% 100%;
             &.entry-scale {
                 animation: entry_scaling 2s infinite linear 1s;
@@ -92,7 +92,7 @@
             bottom: 0;
             left: 0;
             z-index: 0;
-            background: url("../../images/01-home/model_bg.png") no-repeat center;
+            background: url("#{$imgUrl}/01-home/model_bg.png") no-repeat center;
             background-size: 100%;
             transform: rotateZ(-8deg);
         }

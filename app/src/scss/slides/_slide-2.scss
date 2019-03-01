@@ -1,6 +1,6 @@
 .slide-2 {
     padding: 2rem;
-    background: url("../../images/02-ads/bg.jpg") no-repeat;
+    background: url("#{$imgUrl}/02-ads/bg.jpg") no-repeat;
     background-size: cover;
     .item-chat {
         width: 10rem;
@@ -15,7 +15,7 @@
         padding-top: 1rem;
         padding-left: 1rem;
         //margin: auto;
-        background: url("../../images/02-ads/chat.png") no-repeat left top;
+        background: url("#{$imgUrl}/02-ads/chat.png") no-repeat left top;
         background-size: 100%;
     }
     .item-center {
@@ -63,7 +63,7 @@
             color: #fff;
             line-height: 1.5rem;
             font-size: 0.7rem;
-            background: url("../../images/02-ads/no_longer.png") no-repeat center;
+            background: url("#{$imgUrl}/02-ads/no_longer.png") no-repeat center;
             background-size: contain;
             span {
                 padding: 0 0.8rem;

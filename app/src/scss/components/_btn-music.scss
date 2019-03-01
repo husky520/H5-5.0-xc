@@ -11,7 +11,7 @@
     border: none;
     padding: 0;
     animation: btnMusicAni 3s infinite linear;
-    background: url('../../images/music_btn.png') no-repeat;
+    background: url('#{$imgUrl}/music_btn.png') no-repeat;
     background-size: contain;
     &.paused {
         opacity: 0.4;

@@ -16,19 +16,19 @@
 
 .slide-3 {
   .item-title {
-    background: url("../../images/03-nav/title.png") no-repeat center;
+    background: url("#{$imgUrl}/03-nav/title.png") no-repeat center;
     background-size: auto 100%;
   }
 }
 .slide-5 {
   .item-title {
-    background: url("../../images/05-cooperation/title.png") no-repeat center;
+    background: url("#{$imgUrl}/05-cooperation/title.png") no-repeat center;
     background-size: auto 100%;
   }
 }
 .slide-6 {
   .item-title {
-    background: url("../../images/06-concat/title.png") no-repeat center;
+    background: url("#{$imgUrl}/06-concat/title.png") no-repeat center;
     background-size: auto 100%;
   }
 }

@@ -6,7 +6,7 @@
     height: 100%;
     background-color: #000;
     z-index: 9999;
-    background: url("../../images/loading_bg.jpg") no-repeat center;
+    background: url("#{$imgUrl}/loading_bg.jpg") no-repeat center;
     background-size: cover;
     
     .loading-wrapper {
@@ -28,7 +28,7 @@
         }
         .loading-bottom {
             z-index: 1;
-            background-image: url("../../images/loading_line.png");
+            background-image: url("#{$imgUrl}/loading_line.png");
             background-repeat: repeat-x;
             background-size: auto 100%;
             background-position: 0 50%;

@@ -1,5 +1,5 @@
 .slide-6 {
-  background: url("../../images/06-concat/bg.jpg") no-repeat;
+  background: url("#{$imgUrl}/06-concat/bg.jpg") no-repeat;
   background-size: cover;
 
   .item-qcode {
@@ -40,13 +40,13 @@
         font-size: 0.6rem;
         color: #fff;
         line-height: 2.7rem;
-        background: url("../../images/06-concat/info_bg.png") no-repeat center;
+        background: url("#{$imgUrl}/06-concat/info_bg.png") no-repeat center;
         background-size: 100%;
 
         &.bottom-item-3 {
           padding-top: 0.5rem;
           line-height: 1rem;
-          background: url("../../images/06-concat/address_bg.png") no-repeat center;
+          background: url("#{$imgUrl}/06-concat/address_bg.png") no-repeat center;
           background-size: 100%;
         }
     }

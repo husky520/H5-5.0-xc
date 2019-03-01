@@ -6,7 +6,7 @@
   left: 1rem;
   width: 2rem;
   height: 2rem;
-  background: url("../../images/04-details/back_btn.png") no-repeat;
+  background: url("#{$imgUrl}/04-details/back_btn.png") no-repeat;
   background-size: contain;
 
   &:active {
