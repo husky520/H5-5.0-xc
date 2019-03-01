@@ -36,6 +36,16 @@ gulp.task('publish-fonts', function () {
         .pipe(gulp.dest('app/dist/fonts'));
 });
 
+// copy weixin sdk from app/src/javascripts to app/dist/javascripts
+gulp.task('publish-weixin-sdk', function () {
+    var sdk = vendors.fonts.concat([
+        'app/src/javascripts/jweixin-1.4.0.js'
+    ]);
+
+    return gulp.src(sdk)
+        .pipe(gulp.dest('app/dist/javascripts'));
+});
+
 // optimize images under app/src/images and save the results to app/dist/images
 gulp.task('publish-images', function () {
     var imagesWithoutSVG = ['app/src/images/**/*', '!app/src/images/**/*.svg'];
@@ -129,7 +139,7 @@ gulp.task('watch', function () {
 
     gulp.watch('app/src/index.html', ['inject']);
     gulp.watch('app/src/scss/**/*.scss', ['publish-css']);
-    gulp.watch('app/src/javascripts/**/*', ['publish-js']);
+    gulp.watch('app/src/javascripts/**/*', ['publish-js', 'publish-weixin-sdk']);
     gulp.watch('app/src/fonts/**/*', ['publish-fonts']);
     gulp.watch('app/src/images/**/*', ['publish-images']);
     gulp.watch('app/src/media/**/*', ['publish-media']);
@@ -154,7 +164,7 @@ gulp.task('clean-files', function(cb) {
 
 // development workflow task
 gulp.task('dev', function (cb) {
-    runSequence(['clean-files'], ['publish-fonts', 'publish-images', 'publish-media', 'publish-css', 'publish-js'], 'inject', 'watch', cb);
+    runSequence(['clean-files'], ['publish-fonts', 'publish-weixin-sdk', 'publish-images', 'publish-media', 'publish-css', 'publish-js'], 'inject', 'watch', cb);
 });
 
 // default task
